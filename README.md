@@ -30,7 +30,7 @@ The GridGIS software is able to save the processed input files into ASCII text f
 The types of operations provided by GridGIS are raster based and uses map algebra, meaning that the operations are done to all cells using one or two raster layers. The operations of GridGIS are either based on local, focal or zonal operations. GridGIS can perform one operation at the time. Should the user be interested in performing several operations, the user is able to do so by saving the output result of one operation, and using the same output for the next operation.
 
 # Operations
-1. Local Operations - Usage Examples
+## Local Operations - Usage Examples
 
 LocalSum 
 The local sum operation can be used for combining data of two maps. If the user is interested both in the road infrastructure and the locations of water bodies, a map of the infrastructure and the water bodies can be added together, so the content of both maps are shown in one map.
@@ -58,7 +58,7 @@ LocalVariety
 Local variety will return either 1 or two, as it returns the count of values of the same position in two input files. This type of map maybe valuable as a step in an map analysis. An example of this is looking at built environments of different times in history, to see how much areas that have been exploited compared to previously.
 
 
-2. Focal Operations - Usage Examples
+## Focal Operations - Usage Examples
 
 FocalSum 
 Focal sum returns the sum of the values in a neighborhood. This may be useful for calculating the sum of population within a radius from a hospital or similar.
@@ -80,7 +80,7 @@ FocalVariety
 Focal variety will return the count of values within the neighborhood. This operation can be useful for looking at the diversity of functions in a built environment.
 
 
-3. Zonal operations - Usage Examples
+## Zonal operations - Usage Examples
 
 ZonalSum 
 The zonal sum operation will return the sum of all values within a zone. This operation can be useful if wanting to calculate for example the sum of population within an administrative zone.
