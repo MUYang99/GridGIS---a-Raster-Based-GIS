@@ -1,5 +1,6 @@
 # GridGIS_a-Raster-Based-GIS
-![image](https://github.com/MUYang99/GridGIS_a-Raster-Based-GIS/blob/main/Imgs/1.JPG)
+
+![image](https://github.com/MUYang99/GridGIS_a-Raster-Based-GIS/blob/main/Imgs/GridGIS.jpg)
 
 While developing GridGIS, the goal was to create an easily used GIS competent enough to do everything the basic GIS user is desiring, while not complicating it. This is why GridGIS is based on Map Algebraic operations and an uncomplicated interface. The range of operations provided in GridGIS are enough to provide all GridGIS users with a versatile tool, which operations you after reading this manual will know how to use.
 
