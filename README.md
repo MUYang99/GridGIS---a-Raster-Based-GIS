@@ -13,9 +13,9 @@ Best regards,
 the Development Team
 
 Yang Mu
-Jonas Bylerius
-Micael Makenzius
-Ann-Sofi Lenander
+& Jonas Bylerius
+& Micael Makenzius
+& Ann-Sofi Lenander
 
 # Instruction
 
