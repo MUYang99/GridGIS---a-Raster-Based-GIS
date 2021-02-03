@@ -33,71 +33,91 @@ The types of operations provided by GridGIS are raster based and uses map algebr
 ## Local Operations - Usage Examples
 
 LocalSum 
+
 The local sum operation can be used for combining data of two maps. If the user is interested both in the road infrastructure and the locations of water bodies, a map of the infrastructure and the water bodies can be added together, so the content of both maps are shown in one map.
 
 LocalSubstraction 
+
 If the user wants to look at a map of road infrastructure without buildings, the local subtraction operation can be used. If the user has a map visualizing both buildings and roads, the user can subtract houses from that map. This may require the user to use the local binary function for creating a map containing only numbers.
 
 LocalDivision 
+
 The local division operation may be useful if the user is looking to analyse the content of a map with respect to content of another map. An example of this could be if the user has a grid population density map, and wants to analyse a property per capita.
 
 LocalBinary 
+
 The local binary operation is good if the user is interested in looking for one or two specific values of one or two maps. If the user inputs two maps, the user must understand the meaning of the applied search value for both of the maps. This function can work for either looking for all buildings in a map. It can also be used as a step in a
 map analysation, for example by using the map containing only houses, and combining that map in another raster operation.
 
 LocalMean 
+
 The local mean operation takes the mean value of the same position of each input map. This could be used for taking the mean value of temperature maps, of temperature measurements of two different dates..
 
 LocalMax 
+
 The local max operation returns the maximum value of the two input maps. This operation can be used for finding the maximum value of for example the minimum snow thickness of two different occasions.
 
 LocalMin 
+
 The local min operation returns the minimum value of the two input maps. This operation can be used for finding the maximum value of for example precipitation of an area of different occasions.
 
 LocalVariety 
+
 Local variety will return either 1 or two, as it returns the count of values of the same position in two input files. This type of map maybe valuable as a step in an map analysis. An example of this is looking at built environments of different times in history, to see how much areas that have been exploited compared to previously.
 
 
 ## Focal Operations - Usage Examples
 
 FocalSum 
+
 Focal sum returns the sum of the values in a neighborhood. This may be useful for calculating the sum of population within a radius from a hospital or similar.
 
 FocalBinary 
+
 Focal binary lets the user search for a value within a map neighborhood. If the neighborhood contains the value, the center cell of the neighborhood will get the value searched for. As the operations is performed for all grid
 positions, the result will be a buffered area around the applied search value. 
 
 FocalMean 
+
 Focal mean returns the mean value of the neighborhood. This could be used as a filter for smoothing the input file.
 
 FocalMax 
+
 Focal max will return the maximum value of the neighborhood, which may be good for finding and emphasizing areas of high elevation.
 
 FocalMin 
+
 Focal min will return the minimum value of the neighborhood. This can be useful while analysing a temperature map.
 
 FocalVariety 
+
 Focal variety will return the count of values within the neighborhood. This operation can be useful for looking at the diversity of functions in a built environment.
 
 
 ## Zonal operations - Usage Examples
 
 ZonalSum 
+
 The zonal sum operation will return the sum of all values within a zone. This operation can be useful if wanting to calculate for example the sum of population within an administrative zone.
 
 ZonalBinary 
+
 The zonal binary operation can be used to search for an applied search value within a zone. If the zone input file layer contains districts, the user can use the zonal binary to find all zones containing elementary schools,
 or all zones containing traffic lights.
 
 ZonalMean 
+
 The zonal mean will return the mean value of all values within a zone. This can be used for analysing, as the mean value of a property within a zone can work as a step map, used in further operations.
 
 ZonalMax 
+
 The zonal max operation will return the maximum value within a zone for the whole zone. This operation can be useful, for example you might want to know what's the highest point in each zone.
 
 ZonalMin 
+
 The zonal min operation will return the minimum value within a zone for the whole zone. If comparing precipitation of different zones a ZonalMin operation can be used to find the least amount of precipitation in different
 zones.
 
 ZonalVariety 
+
 The zonal variety will return the count of values within a zone. This operation can be used to find the diversity of function within all specified zones within a built environment.
